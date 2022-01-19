@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import Editor from './Editor';
+import Preview from './Preview';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <div className='min-h-screen grid sm:grid-cols-2 gap-4'>
+        <div className='bg-slate-100 p-8'>
+          <Editor />
+        </div>
+        <div className='bg-slate-100 p-8'>
+          <Preview />
+        </div>
+      </div>
     </div>
   );
 }
